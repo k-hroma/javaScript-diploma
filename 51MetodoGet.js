@@ -1,4 +1,4 @@
-
+//Método get
 
 let persona = {
     nombre: 'Juan',

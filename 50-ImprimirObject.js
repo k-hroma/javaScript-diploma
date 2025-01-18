@@ -19,7 +19,9 @@ console.log( persona );
 
 //ESTAS FORMAS SON APTAS PARA UN NAVEGADOR WEB
 //Concatenar cada valor de cada propiedad
+
 console.log( persona.nombre + ', ' + persona.apellido);
+console.log(persona.nombreCompleto())
 
 //for in
 for( nombrePropiedad in persona){
