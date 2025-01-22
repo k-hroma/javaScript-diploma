@@ -37,7 +37,9 @@ const funcionConParametrosClasico = function (mensaje) {
 funcionConParametrosClasico("saludos con parametros clasico");
 //6. Ejemplo:
 //funcion con parámetros
-const funcionConParametros1 = (mensaje) => console.log(mensaje);
+const funcionConParametros1 = (mensaje) => {
+  console.log(mensaje);
+};
 funcionConParametros1("saludos con parametros");
 
 //7. Ejemplo
@@ -47,6 +49,7 @@ funcionConParametros2("saludos con parametros con un parámetro");
 
 //8.
 const funcionConVariosParametrosSimple = (op1, op2) => op1 + op2;
+
 console.log(funcionConVariosParametrosSimple(3, 5));
 
 //9.
