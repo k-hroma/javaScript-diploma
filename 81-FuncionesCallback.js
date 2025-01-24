@@ -17,21 +17,30 @@ function imprimir(mensaje) {
   console.log(mensaje);
 }
 
-function sumar(op1, op2, funcionCallback) {
-  let res = op1 + op2;
-  funcionCallback(`Resultado: ${res}`);
+function prueba(mensaje1, mensaje2) {
+  console.log(mensaje1, mensaje2);
 }
 
-sumar(5, 3, imprimir);
-
-//Funcion de tipo callback como variable
-let imp = function imprimir(mensaje) {
-  console.log(mensaje);
-};
-
-function sumar(op1, op2, funcionCallbackImprimir) {
+function sumar(funcionCallback, op1, op2) {
   let res = op1 + op2;
-  funcionCallbackImprimir(`Resultado: ${res}`);
+  let res2 = op1 * op2;
+  funcionCallback(
+    `Resultado suma: ${res}`,
+    `Resultado multiplicacion: ${res2}`
+  );
 }
 
-sumar(5, 3, imp);
+sumar(imprimir, 5, 3);
+sumar(prueba, 3, 4);
+
+// //Funcion de tipo callback como variable
+// let imp = function imprimir(mensaje) {
+//   console.log(mensaje);
+// };
+
+// function sumar(op1, op2, funcionCallbackImprimir) {
+//   let res = op1 + op2;
+//   funcionCallbackImprimir(`Resultado: ${res}`);
+// }
+
+// sumar(5, 3, imp);

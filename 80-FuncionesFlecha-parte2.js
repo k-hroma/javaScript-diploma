@@ -29,6 +29,13 @@ console.log(saludar2());
 const regresaObjeto = () => ({ nombre: "Juan", apellido: "Lara" });
 console.log(regresaObjeto());
 
+//explicacion clasica:
+function regresaObjeto2() {
+  return { nombre: "Juan", apellido: "Lara" };
+}
+
+console.log(regresaObjeto2());
+
 //5. Ejemplo:
 //funcion con parámetros clasico
 const funcionConParametrosClasico = function (mensaje) {
